@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/CMakeFiles/bootloader
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/CMakeFiles/bootloader.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/CMakeFiles/bootloader-complete.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
