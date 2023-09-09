@@ -151,11 +151,11 @@ void LSM6dsv16bx_System::SetupSimpleTDM(){
   // lsm6dsv16bx_tdm_axis_order_set(&dev_ctx, LSM6DSV16BX_TDM_ORDER_ZYX);
   // lsm6dsv16bx_tdm_xl_full_scale_set(&dev_ctx, LSM6DSV16BX_TDM_2g);
   
-  uint8_t cf0 = 0xA1;//
+  uint8_t cf0 = 0x82;//rising + 16 + 2048(config1) A1 falling + 8 2048
   lsm6dsv16bx_write_reg(&dev_ctx, LSM6DSV16BX_TDM_CFG0, &cf0 , 1);
-  uint8_t cf1 = 0xE0;// falling + 8 2048
+  uint8_t cf1 = 0xE0;//default
   lsm6dsv16bx_write_reg(&dev_ctx, LSM6DSV16BX_TDM_CFG1, &cf1 , 1);
-  uint8_t cf2 = 0x01;// mask on, 4g
+  uint8_t cf2 = 0x01;// mask off, 4g
   lsm6dsv16bx_write_reg(&dev_ctx, LSM6DSV16BX_TDM_CFG2, &cf2 , 1);
   uint8_t sp = 0x20;
   lsm6dsv16bx_write_reg(&dev_ctx, LSM6DSV16BX_CTRL1, &sp, 1);
@@ -202,11 +202,11 @@ void LSM6dsv16bx_System::SetupTDM(){
   lsm6dsv16bx_tdm_dis_wclk_pull_up_set(&dev_ctx, PROPERTY_DISABLE);
   lsm6dsv16bx_tdm_tdmout_pull_up_set(&dev_ctx, PROPERTY_DISABLE);
   lsm6dsv16bx_tdm_wclk_bclk_set(&dev_ctx, LSM6DSV16BX_WCLK_16kHZ_BCLK_2048kHz);
-  lsm6dsv16bx_tdm_bclk_edge_set(&dev_ctx, LSM6DSV16BX_BCLK_FALLING);
+  lsm6dsv16bx_tdm_bclk_edge_set(&dev_ctx, LSM6DSV16BX_BCLK_RISING);
   lsm6dsv16bx_tdm_slot_set(&dev_ctx, LSM6DSV16BX_SLOT_012);
   lsm6dsv16bx_tdm_delayed_conf_set(&dev_ctx, PROPERTY_DISABLE);
   lsm6dsv16bx_tdm_axis_order_set(&dev_ctx, LSM6DSV16BX_TDM_ORDER_ZYX);
-  lsm6dsv16bx_tdm_xl_full_scale_set(&dev_ctx, LSM6DSV16BX_TDM_8g);
+  lsm6dsv16bx_tdm_xl_full_scale_set(&dev_ctx, LSM6DSV16BX_TDM_4g);
   
 }
 

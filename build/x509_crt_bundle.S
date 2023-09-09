@@ -1,4 +1,4 @@
-/* * Data converted from /Users/passo/Learning/HCI/TestOnESP_IDF/bone_conduct/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/passo/Documents/GitHub/LSM6DSV16BX_ESPIDFdriver/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
